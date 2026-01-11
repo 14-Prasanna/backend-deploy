@@ -9,7 +9,7 @@ function App() {
   const [activeTab, setActiveTab] = useState('Overview');
   const [editingCamera, setEditingCamera] = useState(null);
 
-  const API_BASE = 'http://localhost:8000/api';
+  const API_BASE = 'https://backend-deploy-1-ww52.onrender.com/api';
 
   const fetchCameras = async () => {
     try {
