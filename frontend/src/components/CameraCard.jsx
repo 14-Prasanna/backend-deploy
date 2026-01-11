@@ -7,7 +7,7 @@ const CameraCard = ({ camera, onDelete }) => {
   useEffect(() => {
     // Reset error when camera changes
     setError(false);
-    setImgSrc(`http://localhost:8000/api/streams/${camera.id}`);
+    setImgSrc(`https://backend-deploy-1-ww52.onrender.com/api/streams/${camera.id}`);
   }, [camera.id]);
 
   const handleError = () => {
