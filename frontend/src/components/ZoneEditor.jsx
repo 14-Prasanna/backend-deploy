@@ -16,7 +16,7 @@ const ZoneEditor = ({ camera, onSave, onCancel }) => {
 
         // Grab a snapshot for background
         const img = new Image();
-        img.src = `http://localhost:8000/api/streams/${camera.id}`; // Use live frame as snapshot
+        img.src = `https://backend-deploy-1-ww52.onrender.com/api/streams/${camera.id}`; // Use live frame as snapshot
         img.crossOrigin = "Anonymous";
         img.onload = () => setImage(img);
     }, [camera]);
